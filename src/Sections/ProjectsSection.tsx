@@ -19,8 +19,23 @@ import {
   SiNodedotjs,
   SiMongodb,
   SiMysql,
-  SiSass
+  SiSass,
+  SiBootstrap,
+  SiJquery,
+  SiExpress,
+  SiTailwindcss,
+  SiRedux,
+  SiMongoose,
+  SiR,
+  SiPython,
+  SiJupyter,
+  SiScikitlearn,
+  SiPandas,
+  SiNumpy,
+  SiStreamlit,
+  SiPlotly,
 } from "react-icons/si";
+import { MdOutlineShowChart } from "react-icons/md";
 import { Github, ExternalLink } from "lucide-react";
 import { FaJava } from "react-icons/fa";
 import { SiHibernate } from "react-icons/si";
@@ -30,16 +45,62 @@ import mentalhealth from "../assets/ProjectPics/MentalHealthCenter.png";
 import petcarecenter from "../assets/ProjectPics/PerCareCenter.png";
 import poss from "../assets/ProjectPics/pos.webp";
 import portfolio from "../assets/ProjectPics/portfolio.png";
-import tictactoe from "../assets/ProjectPics/tic-tac-toe.png"
+import tictactoe from "../assets/ProjectPics/tic-tac-toe.png";
 import rpsgame from "../assets/ProjectPics/RpsGame.png";
-import wtzapp from "../assets/ProjectPics/whatsapp.png"
+import wtzapp from "../assets/ProjectPics/whatsapp.png";
+import complaintmngsytem from "../assets/ProjectPics/ComplaintMngSystem.png";
+import keepify from "../assets/ProjectPics/Keepify.png";
+import movieRecommeder from "../assets/ProjectPics/movieRecommenderApp.png";
+import r from "../assets/ProjectPics/R_Language.png"
+import ds from "../assets/ProjectPics/DS.png"
 
 const projects = [
   {
     id: 1,
-    title: "NeedItDone – Home Service Hiring Platform",
+    title: "Movie Recommender App",
     description:
-      "A platform that bridges the gap between homeowners and workers.",
+      "A content-based movie recommender system using TF-IDF and cosine similarity to suggest similar movies.",
+    image: movieRecommeder,
+    category: "Data Science & ML",
+    technologies: [
+      { name: "Python", icon: SiPython, color: "#3776AB" },
+      { name: "Jupyter Notebook", icon: SiJupyter, color: "#F37626" },
+      { name: "Pandas", icon: SiPandas, color: "#150458" },
+      { name: "Scikit-learn", icon: SiScikitlearn, color: "#F7931E" },
+
+      { name: "NumPy", icon: SiNumpy, color: "#013243" },
+      { name: "Streamlit", icon: SiStreamlit, color: "#FF4B4B" },
+    ],
+    githubUrl: "https://github.com/DiilaNa/Movie-Recommendation-App.git",
+    liveUrl:
+      "https://movie-recommendation-app-74mux7mwl8vazsgfshaavp.streamlit.app/",
+  },
+  {
+    id: 2,
+    title: "KEEPIFY – The Warranty Tracker",
+    description:
+      "A digital solution to store, track, and manage product warranties in one place",
+    image: keepify,
+    category: "Web Development",
+    technologies: [
+      { name: "Express.js", icon: SiExpress, color: "#000000" },
+      { name: "Node.js", icon: SiNodedotjs, color: "#339933" },
+      { name: "TypeScript", icon: SiTypescript, color: "#3178C6" },
+      { name: "MongoDB", icon: SiMongodb, color: "#47A248" },
+      { name: "Tailwind CSS", icon: SiTailwindcss, color: "#06B6D4" },
+      { name: "React", icon: SiReact, color: "#61DAFB" },
+      { name: "Redux", icon: SiRedux, color: "#764ABC" },
+      { name: "Mongoose", icon: SiMongoose, color: "#47A248" },
+    ],
+    githubUrl:
+      "https://github.com/DiilaNa/Keepify-The_Product_Warranty_Tracker-FrontEnd.git",
+    liveUrl: "https://keepify-the-product-warranty-tracke.vercel.app/",
+  },
+  {
+    id: 3,
+    title: "NEEDITDONE – House hold Services Hiring Platform",
+    description:
+      "A platform that makes it easy to find help for small house hold jobs.",
     image: needitdone,
     category: "Web Development",
     technologies: [
@@ -48,14 +109,15 @@ const projects = [
       { name: "Javascript", icon: SiJavascript, color: "#dfff00" },
       { name: "Html", icon: SiHtml5, color: "#ea7a10" },
       { name: "Css", icon: SiCss3, color: "#0e87dd" },
+      { name: "Hibernate", icon: SiHibernate, color: "#E34F26" },
     ],
     githubUrl:
       "https://github.com/DiilaNa/NeedItDone-AAD_Final_Project_IJSE.git",
     liveUrl: "",
   },
   {
-    id: 2,
-    title: "University event Ticket Booking System",
+    id: 4,
+    title: "BOOKME - Ticket Booking System for University Events",
     description: "BookMe streamlines campus event ticketing.",
     image: bookme,
     category: "Web Development",
@@ -71,7 +133,27 @@ const projects = [
     liveUrl: "",
   },
   {
-    id: 3,
+    id: 5,
+    title: "Complaint Management System",
+    description:
+      "A web-based system to manage, track, and resolve user complaints efficiently.",
+    image: complaintmngsytem,
+    category: "Web Development",
+    technologies: [
+      { name: "HTML", icon: SiHtml5, color: "#E34F26" },
+      { name: "CSS", icon: SiCss3, color: "#1572B6" },
+      { name: "JSP", icon: FaJava, color: "#E76F00" },
+      { name: "JavaScript", icon: SiJavascript, color: "#F7DF1E" },
+      { name: "Bootstrap", icon: SiBootstrap, color: "#7952B3" },
+      { name: "jQuery", icon: SiJquery, color: "#0769AD" },
+
+      { name: "MySQL", icon: SiMysql, color: "#4479A1" },
+    ],
+    githubUrl: "https://github.com/DiilaNa/BookMe.git",
+    liveUrl: "",
+  },
+  {
+    id: 6,
     title: "Portfolio Website",
     description: "Modern, responsive portfolio website with smooth animations.",
     image: portfolio,
@@ -85,7 +167,7 @@ const projects = [
     liveUrl: "https://diilana.github.io/MyPortafolio/",
   },
   {
-    id: 4,
+    id: 7,
     title: "Point of Sales System",
     description:
       "A web-based POS interface demonstrating sales functionalities.",
@@ -100,7 +182,7 @@ const projects = [
     liveUrl: "https://diilana.github.io/POS_SYSTEM/",
   },
   {
-    id: 5,
+    id: 8,
     title: "Mental Health Care Center",
     description: "A standalone desktop application with Hibernate ORM.",
     image: mentalhealth,
@@ -115,7 +197,7 @@ const projects = [
     liveUrl: "",
   },
   {
-    id: 6,
+    id: 9,
     title: "Pet Care Management System",
     description: "A standalone application to manage pet records.",
     image: petcarecenter,
@@ -129,7 +211,7 @@ const projects = [
     liveUrl: "",
   },
   {
-    id: 7,
+    id: 10,
     title: "Tic-Tac-Toe Game",
     description: "Man vs AI... A Game developed using Minmax algorithm.",
     image: tictactoe,
@@ -142,7 +224,7 @@ const projects = [
     liveUrl: "",
   },
   {
-    id: 8,
+    id: 11,
     title: "Rock Paper Scissor Game",
     description: "Simple Game developed to play Rock paper scisors",
     image: rpsgame,
@@ -155,7 +237,7 @@ const projects = [
     liveUrl: "",
   },
   {
-    id: 9,
+    id: 12,
     title: "Chat Application",
     description: "Group chat application using Java SocketIO",
     image: wtzapp,
@@ -166,6 +248,35 @@ const projects = [
       { name: "Sockets", icon: FaJava, color: "#F7DF1E" },
     ],
     githubUrl: "https://github.com/DiilaNa/Chat-Appication-Using-SocketIO.git",
+    liveUrl: "",
+  },
+  {
+    id: 13,
+    title: "Learning R Language",
+    description:
+      "Self-studying the fundamentals of R language for data science focusing on data manipulation,visualization and basic analytical techniques. ",
+    image: r,
+    category: "Data Science & ML",
+    technologies: [{ name: "R Language", icon: SiR, color: "#269ec6ff" }],
+    githubUrl: "https://github.com/DiilaNa/Learning-R-Language.git",
+    liveUrl: "",
+  },
+  {
+    id: 14,
+    title: "Data Science with Pandas",
+    description:
+      "Self-studying data manupulation , processing , visualization and basics of machine learning modules.",
+    image: ds,
+    category: "Data Science & ML",
+    technologies: [
+      { name: "Python", icon: SiPython, color: "#3776AB" },
+      { name: "Jupytor", icon: SiJupyter, color: "#b94716ff" },
+      { name: "Scikit-learn", icon: SiScikitlearn, color: "#F7931E" },
+      { name: "Pandas", icon: SiPandas, color: "#150458" },
+      { name: "Matplotlib", icon: MdOutlineShowChart, color: "#11557C" },
+      { name: "Plotly Express", icon: SiPlotly, color: "#3F4F75" },
+    ],
+    githubUrl: "https://github.com/DiilaNa/Data_Science_with-Pandas.git",
     liveUrl: "",
   },
 ];
