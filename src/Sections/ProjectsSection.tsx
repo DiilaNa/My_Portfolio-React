@@ -65,10 +65,10 @@ const projects = [
     technologies: [
       { name: "Python", icon: SiPython, color: "#3776AB" },
       { name: "Jupyter Notebook", icon: SiJupyter, color: "#F37626" },
-      { name: "Pandas", icon: SiPandas, color: "#150458" },
+      { name: "Pandas", icon: SiPandas, color: "#3c13e3ff" },
       { name: "Scikit-learn", icon: SiScikitlearn, color: "#F7931E" },
 
-      { name: "NumPy", icon: SiNumpy, color: "#013243" },
+      { name: "NumPy", icon: SiNumpy, color: "#1db0e1ff" },
       { name: "Streamlit", icon: SiStreamlit, color: "#FF4B4B" },
     ],
     githubUrl: "https://github.com/DiilaNa/Movie-Recommendation-App.git",
@@ -272,9 +272,9 @@ const projects = [
       { name: "Python", icon: SiPython, color: "#3776AB" },
       { name: "Jupytor", icon: SiJupyter, color: "#b94716ff" },
       { name: "Scikit-learn", icon: SiScikitlearn, color: "#F7931E" },
-      { name: "Pandas", icon: SiPandas, color: "#150458" },
+      { name: "Pandas", icon: SiPandas, color: "#461fe0ff" },
       { name: "Matplotlib", icon: MdOutlineShowChart, color: "#11557C" },
-      { name: "Plotly Express", icon: SiPlotly, color: "#3F4F75" },
+      { name: "Plotly Express", icon: SiPlotly, color: "#6076aaff" },
     ],
     githubUrl: "https://github.com/DiilaNa/Data_Science_with-Pandas.git",
     liveUrl: "",
@@ -312,24 +312,32 @@ const ProjectsSection = () => {
           </p>
         </div>
 
-        {/* Navbar */}
         <div className="flex justify-center gap-4 mb-10 flex-wrap">
           {categories.map((category) => (
             <button
               key={category}
               className={`px-4 py-2 rounded-full border transition-colors ${
-                selectedCategory === category
+                selectedCategory === category &&
+                category !== "Mobile App Development"
                   ? "bg-primary text-white border-primary"
                   : "bg-card text-muted-foreground border-border hover:bg-primary/20"
+              } ${
+                category === "Mobile App Development"
+                  ? "opacity-50 cursor-not-allowed hover:bg-card"
+                  : ""
               }`}
-              onClick={() => setSelectedCategory(category)}
+              onClick={() => {
+                if (category !== "Mobile App Development") {
+                  setSelectedCategory(category);
+                }
+              }}
+              disabled={category === "Mobile App Development"}
             >
               {category}
             </button>
           ))}
         </div>
 
-        {/* Projects Grid: 3 columns on medium screens */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 lg:gap-8">
           {filteredProjects.map((project, index) => (
             <Card

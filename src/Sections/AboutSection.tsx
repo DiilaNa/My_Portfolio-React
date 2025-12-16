@@ -8,19 +8,19 @@ import taxila from "../assets/taxila.jpeg";
 const educationData = [
     {
         institution: "Taxila Central College",
-        period: "2020 - 2022",
+        period: "2020 - 2023",
         logo: taxila,
         description: "Advanced Level",
     },
     {
         institution: "ESOFT Metro Campus",
-        period: "2022 - 2023",
+        period: "2023 - 2024",
         logo: esoft,
         description: "Dual Diploma in IT & English",
     },
     {
         institution: "IJSE (Institute of Software Engineering)",
-        period: "2023 - 2025",
+        period: "2024 - Present",
         logo: ijse,
         description: "Graduate Diploma in Software Engineering",
     },
