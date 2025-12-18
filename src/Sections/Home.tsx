@@ -13,7 +13,7 @@ const roles = [
 ];
 
 export default function HeroSection() {
-  const handleDownloadCV = () => window.open("/cv.pdf", "_blank");
+  const handleDownloadCV = () => window.open("/Internship-Resume.pdf", "_blank");
   const scrollToContact = () =>
       document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
 
