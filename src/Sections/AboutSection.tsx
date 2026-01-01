@@ -6,31 +6,30 @@ import esoft from "../assets/esoft.webp";
 import taxila from "../assets/taxila.jpeg";
 
 const educationData = [
-    {
-        institution: "Taxila Central College",
-        period: "2020 - 2023",
-        logo: taxila,
-        description: "Advanced Level",
-    },
-    {
-        institution: "ESOFT Metro Campus",
-        period: "2023 - 2024",
-        logo: esoft,
-        description: "Dual Diploma in IT & English",
-    },
-    {
-        institution: "IJSE (Institute of Software Engineering)",
-        period: "2024 - Present",
-        logo: ijse,
-        description: "Graduate Diploma in Software Engineering",
-    },
-    {
-        institution: "Association of Accounting Technicians",
-        period: "2019 - 2021",
-        logo: aat,
-        description: "Professional Accounting Qualification - Level 02",
-    }
-
+  {
+    institution: "Taxila Central College",
+    period: "2020 - 2023",
+    logo: taxila,
+    description: "Advanced Level",
+  },
+  {
+    institution: "ESOFT Metro Campus",
+    period: "2023 - 2024",
+    logo: esoft,
+    description: "Dual Diploma in IT & English",
+  },
+  {
+    institution: "IJSE (Institute of Software Engineering)",
+    period: "2024 - Present",
+    logo: ijse,
+    description: "BSc (Hons) in Computer Science (Topup Degree)",
+  },
+  {
+    institution: "Association of Accounting Technicians",
+    period: "2019 - 2021",
+    logo: aat,
+    description: "Professional Accounting Qualification - Level 02",
+  },
 ];
 
 export default function AboutSection() {

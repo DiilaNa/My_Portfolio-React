@@ -3,7 +3,6 @@ import { Badge } from "../components/Badge";
 import { Button } from "../components/Button";
 import { ExternalLink, Award, Calendar } from "lucide-react";
 import ciscoDataScience from "../assets/Introduction_to_Data_Science_certificate.pdf"
-import ciscoCyber from "../assets/Introduction_to_Cybersecurity.pdf"
 import ijse from "../assets/IjseCertificate.jpg"
 import esoft from "../assets/esoftCertificate.jpg"
 import esoftAward from "../assets/esoftAward.jpeg"
@@ -20,14 +19,6 @@ interface Certificate {
 const certificates: Certificate[] = [
     {
         id: 1,
-        title: "Introduction to Cybersecurity",
-        issuer: "Cisco Networking Academy",
-        issueDate: "January 2025",
-        certificateLink: ciscoCyber,
-        image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=400&h=250&fit=crop",
-    },
-    {
-        id: 2,
         title: "Introduction to Data Science",
         issuer: "Cisco Networking Academy",
         issueDate: "October 2025",
@@ -35,7 +26,7 @@ const certificates: Certificate[] = [
         image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=400&h=250&fit=crop",
     },
     {
-        id: 3,
+        id: 2,
         title: "Professional Project in IT",
         issuer: "Ijse",
         issueDate: "December 2024",
@@ -43,7 +34,7 @@ const certificates: Certificate[] = [
         image: ijseAward,
     },
     {
-        id: 4,
+        id: 3,
         title: "Most Outstanding Performance",
         issuer: "Esoft Metro Campus",
         issueDate: "December 2024",
