@@ -53,6 +53,7 @@ import keepify from "../assets/ProjectPics/Keepify.png";
 import movieRecommeder from "../assets/ProjectPics/movieRecommenderApp.png";
 import r from "../assets/ProjectPics/R_Language.png"
 import ds from "../assets/ProjectPics/DS.png"
+import dsDashBoard from "../assets/ProjectPics/DS-dashboard.png"
 
 const projects = [
   {
@@ -117,6 +118,24 @@ const projects = [
   },
   {
     id: 4,
+    title: "Hospital diabetes patients readmision analysis",
+    description:
+      "Healthcare data science group project analyzing diabetic patient readmissions using Python. The project applies data preprocessing, exploratory data analysis, and visualization techniques to identify risk factors with hospital readmissions.",
+    image: dsDashBoard,
+    category: "Data Science & ML",
+    technologies: [
+      { name: "Pandas", icon: SiPandas, color: "#3178C6" },
+      { name: "Numpy", icon: SiNumpy, color: "#61DAFB" },
+      { name: "Plotly", icon: SiPlotly, color: "#47A248" },
+      { name: "Steamlit", icon: SiStreamlit, color: "#47A248" },
+    ],
+    githubUrl:
+      "https://github.com/DiilaNa/Analyzing-diabetic-patient-readmissions.git",
+    liveUrl:
+      "https://prefixers-analyzing-diabetic-patient-readmissions.streamlit.app/",
+  },
+  {
+    id: 5,
     title: "BOOKME - Ticket Booking System for University Events",
     description: "BookMe streamlines campus event ticketing.",
     image: bookme,
@@ -133,7 +152,7 @@ const projects = [
     liveUrl: "",
   },
   {
-    id: 5,
+    id: 6,
     title: "Complaint Management System",
     description:
       "A web-based system to manage, track, and resolve user complaints efficiently.",
@@ -153,7 +172,7 @@ const projects = [
     liveUrl: "",
   },
   {
-    id: 6,
+    id: 7,
     title: "Portfolio Website",
     description: "Modern, responsive portfolio website with smooth animations.",
     image: portfolio,
@@ -167,7 +186,7 @@ const projects = [
     liveUrl: "https://diilana.github.io/MyPortafolio/",
   },
   {
-    id: 7,
+    id: 8,
     title: "Point of Sales System",
     description:
       "A web-based POS interface demonstrating sales functionalities.",
@@ -182,7 +201,7 @@ const projects = [
     liveUrl: "https://diilana.github.io/POS_SYSTEM/",
   },
   {
-    id: 8,
+    id: 9,
     title: "Mental Health Care Center",
     description: "A standalone desktop application with Hibernate ORM.",
     image: mentalhealth,
@@ -197,7 +216,7 @@ const projects = [
     liveUrl: "",
   },
   {
-    id: 9,
+    id: 10,
     title: "Pet Care Management System",
     description: "A standalone application to manage pet records.",
     image: petcarecenter,
@@ -211,7 +230,7 @@ const projects = [
     liveUrl: "",
   },
   {
-    id: 10,
+    id: 11,
     title: "Tic-Tac-Toe Game",
     description: "Man vs AI... A Game developed using Minmax algorithm.",
     image: tictactoe,
@@ -224,7 +243,7 @@ const projects = [
     liveUrl: "",
   },
   {
-    id: 11,
+    id: 12,
     title: "Rock Paper Scissor Game",
     description: "Simple Game developed to play Rock paper scisors",
     image: rpsgame,
@@ -237,7 +256,7 @@ const projects = [
     liveUrl: "",
   },
   {
-    id: 12,
+    id: 13,
     title: "Chat Application",
     description: "Group chat application using Java SocketIO",
     image: wtzapp,
@@ -251,7 +270,7 @@ const projects = [
     liveUrl: "",
   },
   {
-    id: 13,
+    id: 14,
     title: "Learning R Language",
     description:
       "Self-studying the fundamentals of R language for data science focusing on data manipulation,visualization and basic analytical techniques. ",
@@ -262,7 +281,7 @@ const projects = [
     liveUrl: "",
   },
   {
-    id: 14,
+    id: 15,
     title: "Data Science with Pandas",
     description:
       "Self-studying data manupulation , processing , visualization and basics of machine learning modules.",
