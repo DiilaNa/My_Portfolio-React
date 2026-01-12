@@ -1,7 +1,7 @@
 import { useState } from "react";
-import { Button } from "../components/Button";
-import { Input } from "../components/Input.tsx";
-import { Textarea } from "../components/TextArea.tsx";
+import { Button } from "../components/ui/Button.tsx";
+import { Input } from "../components/ui/Input.tsx";
+import { Textarea } from "../components/ui/TextArea.tsx";
 import {
   Send,
   Github,
@@ -29,9 +29,9 @@ export default function ContactSection() {
   const PUBLIC_KEY = import.meta.env.VITE_EMAIL_PUBLIC_KEY;
 
   const handleSubmit = (e: React.FormEvent) => {
-     e.preventDefault();
+    e.preventDefault();
     setLoading(true);
-   
+
     emailjs
       .send(
         SERVICE_ID,

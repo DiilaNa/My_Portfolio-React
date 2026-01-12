@@ -6,9 +6,8 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
-} from "../components/Card.tsx";
-import { Button } from "../components/Button.tsx";
-import { Badge } from "../components/Badge.tsx";
+} from "../components/ui/Card.tsx";
+import { Button } from "../components/ui/Button.tsx";
 import {
   SiReact,
   SiSpringboot,
@@ -51,9 +50,10 @@ import wtzapp from "../assets/ProjectPics/whatsapp.png";
 import complaintmngsytem from "../assets/ProjectPics/ComplaintMngSystem.png";
 import keepify from "../assets/ProjectPics/Keepify.png";
 import movieRecommeder from "../assets/ProjectPics/movieRecommenderApp.png";
-import r from "../assets/ProjectPics/R_Language.png"
-import ds from "../assets/ProjectPics/DS.png"
-import dsDashBoard from "../assets/ProjectPics/DS-dashboard.png"
+import r from "../assets/ProjectPics/R_Language.png";
+import ds from "../assets/ProjectPics/DS.png";
+import dsDashBoard from "../assets/ProjectPics/DS-dashboard.png";
+import { Badge } from "../components/ui/Badge.tsx";
 
 const projects = [
   {

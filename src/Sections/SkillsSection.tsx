@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Card, CardContent } from "../components/Card.tsx";
+import { Card, CardContent } from "../components/ui/Card.tsx";
 
 import {
   SiReact,
