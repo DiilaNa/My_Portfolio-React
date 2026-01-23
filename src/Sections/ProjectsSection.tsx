@@ -54,6 +54,7 @@ import r from "../assets/ProjectPics/R_Language.png";
 import ds from "../assets/ProjectPics/DS.png";
 import dsDashBoard from "../assets/ProjectPics/DS-dashboard.png";
 import { Badge } from "../components/ui/Badge.tsx";
+import SmartBlog from "../assets/ProjectPics/SmartBlog.png";
 
 const projects = [
   {
@@ -297,6 +298,24 @@ const projects = [
     ],
     githubUrl: "https://github.com/DiilaNa/Data_Science_with-Pandas.git",
     liveUrl: "",
+  },
+  {
+    id: 16,
+    title: "Simple Blog Posting Platform",
+    description:
+      "A platform to place blogs for users. This contains state management with context api",
+    image: SmartBlog,
+    category: "Web Development",
+    technologies: [
+      { name: "React", icon: SiReact, color: "#3776AB" },
+      { name: "MongoDB", icon: SiMongodb, color: "rgb(7, 201, 17)" },
+      { name: "Express js", icon: SiExpress, color: "#b9690d" },
+      { name: "Typescript", icon: SiTypescript, color: "rgb(8, 171, 231)" },
+      { name: "TailwindCSS", icon: SiTailwindcss, color: "#1693db" },
+    ],
+    githubUrl:
+      "https://github.com/DiilaNa/Simple-Blogs-Posting-Appplication-FrontEND.git",
+    liveUrl: "https://sample-full-stack-appplication-blog-five.vercel.app/",
   },
 ];
 
