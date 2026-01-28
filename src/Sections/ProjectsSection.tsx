@@ -33,6 +33,8 @@ import {
   SiNumpy,
   SiStreamlit,
   SiPlotly,
+  SiExpo,
+  SiFirebase,
 } from "react-icons/si";
 import { MdOutlineShowChart } from "react-icons/md";
 import { Github, ExternalLink } from "lucide-react";
@@ -55,6 +57,7 @@ import ds from "../assets/ProjectPics/DS.png";
 import dsDashBoard from "../assets/ProjectPics/DS-dashboard.png";
 import { Badge } from "../components/ui/Badge.tsx";
 import SmartBlog from "../assets/ProjectPics/SmartBlog.png";
+import cashstash from "../assets/ProjectPics/Cash-Stash.png"
 
 const projects = [
   {
@@ -119,6 +122,24 @@ const projects = [
   },
   {
     id: 4,
+    title: "Simple Blog Posting Platform",
+    description:
+      "A platform to place blogs for users. This contains state management with context api",
+    image: SmartBlog,
+    category: "Web Development",
+    technologies: [
+      { name: "React", icon: SiReact, color: "#3776AB" },
+      { name: "MongoDB", icon: SiMongodb, color: "rgb(7, 201, 17)" },
+      { name: "Express js", icon: SiExpress, color: "#b9690d" },
+      { name: "Typescript", icon: SiTypescript, color: "rgb(8, 171, 231)" },
+      { name: "TailwindCSS", icon: SiTailwindcss, color: "#1693db" },
+    ],
+    githubUrl:
+      "https://github.com/DiilaNa/Simple-Blogs-Posting-Appplication-FrontEND.git",
+    liveUrl: "https://sample-full-stack-appplication-blog-five.vercel.app/",
+  },
+  {
+    id: 5,
     title: "Hospital diabetes patients readmision analysis",
     description:
       "Healthcare data science group project analyzing diabetic patient readmissions using Python. The project applies data preprocessing, exploratory data analysis, and visualization techniques to identify risk factors with hospital readmissions.",
@@ -136,7 +157,7 @@ const projects = [
       "https://prefixers-analyzing-diabetic-patient-readmissions.streamlit.app/",
   },
   {
-    id: 5,
+    id: 6,
     title: "BOOKME - Ticket Booking System for University Events",
     description: "BookMe streamlines campus event ticketing.",
     image: bookme,
@@ -153,7 +174,7 @@ const projects = [
     liveUrl: "",
   },
   {
-    id: 6,
+    id: 7,
     title: "Complaint Management System",
     description:
       "A web-based system to manage, track, and resolve user complaints efficiently.",
@@ -173,7 +194,24 @@ const projects = [
     liveUrl: "",
   },
   {
-    id: 7,
+    id: 8,
+    title: "Expense Tracker",
+    description:
+      "An Andriod mobile application developed using React-Native to Keep track on your expenses",
+    image: cashstash,
+    category: "Mobile App Development",
+    technologies: [
+      { name: "React Native", icon: SiReact, color: "#61DAFB" },
+      { name: "Expo Router", icon: SiExpo, color: "#000020" },
+      { name: "NativeWind", icon: SiTailwindcss, color: "#06B6D4" },
+      { name: "Firebase", icon: SiFirebase, color: "#FFCA28" },
+      { name: "TypeScript", icon: SiTypescript, color: "#3178C6" },
+    ],
+    githubUrl: "https://github.com/DiilaNa/Cash-Stash-Expense-Tracker.git",
+    liveUrl: "",
+  },
+  {
+    id: 9,
     title: "Portfolio Website",
     description: "Modern, responsive portfolio website with smooth animations.",
     image: portfolio,
@@ -187,7 +225,7 @@ const projects = [
     liveUrl: "https://diilana.github.io/MyPortafolio/",
   },
   {
-    id: 8,
+    id: 10,
     title: "Point of Sales System",
     description:
       "A web-based POS interface demonstrating sales functionalities.",
@@ -202,7 +240,7 @@ const projects = [
     liveUrl: "https://diilana.github.io/POS_SYSTEM/",
   },
   {
-    id: 9,
+    id: 11,
     title: "Mental Health Care Center",
     description: "A standalone desktop application with Hibernate ORM.",
     image: mentalhealth,
@@ -217,7 +255,7 @@ const projects = [
     liveUrl: "",
   },
   {
-    id: 10,
+    id: 12,
     title: "Pet Care Management System",
     description: "A standalone application to manage pet records.",
     image: petcarecenter,
@@ -231,7 +269,7 @@ const projects = [
     liveUrl: "",
   },
   {
-    id: 11,
+    id: 13,
     title: "Tic-Tac-Toe Game",
     description: "Man vs AI... A Game developed using Minmax algorithm.",
     image: tictactoe,
@@ -244,7 +282,7 @@ const projects = [
     liveUrl: "",
   },
   {
-    id: 12,
+    id: 14,
     title: "Rock Paper Scissor Game",
     description: "Simple Game developed to play Rock paper scisors",
     image: rpsgame,
@@ -257,7 +295,7 @@ const projects = [
     liveUrl: "",
   },
   {
-    id: 13,
+    id: 15,
     title: "Chat Application",
     description: "Group chat application using Java SocketIO",
     image: wtzapp,
@@ -271,7 +309,7 @@ const projects = [
     liveUrl: "",
   },
   {
-    id: 14,
+    id: 16,
     title: "Learning R Language",
     description:
       "Self-studying the fundamentals of R language for data science focusing on data manipulation,visualization and basic analytical techniques. ",
@@ -282,7 +320,7 @@ const projects = [
     liveUrl: "",
   },
   {
-    id: 15,
+    id: 17,
     title: "Data Science with Pandas",
     description:
       "Self-studying data manupulation , processing , visualization and basics of machine learning modules.",
@@ -298,24 +336,6 @@ const projects = [
     ],
     githubUrl: "https://github.com/DiilaNa/Data_Science_with-Pandas.git",
     liveUrl: "",
-  },
-  {
-    id: 16,
-    title: "Simple Blog Posting Platform",
-    description:
-      "A platform to place blogs for users. This contains state management with context api",
-    image: SmartBlog,
-    category: "Web Development",
-    technologies: [
-      { name: "React", icon: SiReact, color: "#3776AB" },
-      { name: "MongoDB", icon: SiMongodb, color: "rgb(7, 201, 17)" },
-      { name: "Express js", icon: SiExpress, color: "#b9690d" },
-      { name: "Typescript", icon: SiTypescript, color: "rgb(8, 171, 231)" },
-      { name: "TailwindCSS", icon: SiTailwindcss, color: "#1693db" },
-    ],
-    githubUrl:
-      "https://github.com/DiilaNa/Simple-Blogs-Posting-Appplication-FrontEND.git",
-    liveUrl: "https://sample-full-stack-appplication-blog-five.vercel.app/",
   },
 ];
 
@@ -355,21 +375,12 @@ const ProjectsSection = () => {
             <button
               key={category}
               className={`px-4 py-2 rounded-full border transition-colors ${
-                selectedCategory === category &&
-                category !== "Mobile App Development"
-                  ? "bg-primary text-white border-primary"
+                selectedCategory === category ? "bg-primary text-white border-primary"
                   : "bg-card text-muted-foreground border-border hover:bg-primary/20"
-              } ${
-                category === "Mobile App Development"
-                  ? "opacity-50 cursor-not-allowed hover:bg-card"
-                  : ""
               }`}
               onClick={() => {
-                if (category !== "Mobile App Development") {
                   setSelectedCategory(category);
-                }
               }}
-              disabled={category === "Mobile App Development"}
             >
               {category}
             </button>
