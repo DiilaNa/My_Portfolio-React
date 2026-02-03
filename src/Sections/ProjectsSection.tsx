@@ -25,7 +25,6 @@ import {
   SiTailwindcss,
   SiRedux,
   SiMongoose,
-  SiR,
   SiPython,
   SiJupyter,
   SiScikitlearn,
@@ -36,7 +35,7 @@ import {
   SiExpo,
   SiFirebase,
 } from "react-icons/si";
-import { MdOutlineShowChart } from "react-icons/md";
+//import { MdOutlineShowChart } from "react-icons/md";
 import { Github, ExternalLink } from "lucide-react";
 import { FaJava } from "react-icons/fa";
 import { SiHibernate } from "react-icons/si";
@@ -44,7 +43,6 @@ import needitdone from "../assets/ProjectPics/Homepage.png";
 import bookme from "../assets/ProjectPics/Bookme.png";
 import mentalhealth from "../assets/ProjectPics/MentalHealthCenter.png";
 import petcarecenter from "../assets/ProjectPics/PerCareCenter.png";
-import poss from "../assets/ProjectPics/pos.webp";
 import portfolio from "../assets/ProjectPics/portfolio.png";
 import tictactoe from "../assets/ProjectPics/tic-tac-toe.png";
 import rpsgame from "../assets/ProjectPics/RpsGame.png";
@@ -52,8 +50,8 @@ import wtzapp from "../assets/ProjectPics/whatsapp.png";
 import complaintmngsytem from "../assets/ProjectPics/ComplaintMngSystem.png";
 import keepify from "../assets/ProjectPics/Keepify.png";
 import movieRecommeder from "../assets/ProjectPics/movieRecommenderApp.png";
-import r from "../assets/ProjectPics/R_Language.png";
-import ds from "../assets/ProjectPics/DS.png";
+//import r from "../assets/ProjectPics/R_Language.png";
+//import ds from "../assets/ProjectPics/DS.png";
 import dsDashBoard from "../assets/ProjectPics/DS-dashboard.png";
 import { Badge } from "../components/ui/Badge.tsx";
 import SmartBlog from "../assets/ProjectPics/SmartBlog.png";
@@ -212,7 +210,7 @@ const projects = [
   },
   {
     id: 9,
-    title: "Portfolio Website",
+    title: "Portfolio Website Design 01",
     description: "Modern, responsive portfolio website with smooth animations.",
     image: portfolio,
     category: "Web Development",
@@ -226,21 +224,6 @@ const projects = [
   },
   {
     id: 10,
-    title: "Point of Sales System",
-    description:
-      "A web-based POS interface demonstrating sales functionalities.",
-    image: poss,
-    category: "Web Development",
-    technologies: [
-      { name: "JavaScript", icon: SiJavascript, color: "#F7DF1E" },
-      { name: "HTML5", icon: SiHtml5, color: "#E34F26" },
-      { name: "CSS3", icon: SiCss3, color: "#1572B6" },
-    ],
-    githubUrl: "https://github.com/DiilaNa/POS_SYSTEM.git",
-    liveUrl: "https://diilana.github.io/POS_SYSTEM/",
-  },
-  {
-    id: 11,
     title: "Mental Health Care Center",
     description: "A standalone desktop application with Hibernate ORM.",
     image: mentalhealth,
@@ -255,7 +238,7 @@ const projects = [
     liveUrl: "",
   },
   {
-    id: 12,
+    id: 11,
     title: "Pet Care Management System",
     description: "A standalone application to manage pet records.",
     image: petcarecenter,
@@ -269,7 +252,7 @@ const projects = [
     liveUrl: "",
   },
   {
-    id: 13,
+    id: 12,
     title: "Tic-Tac-Toe Game",
     description: "Man vs AI... A Game developed using Minmax algorithm.",
     image: tictactoe,
@@ -282,7 +265,7 @@ const projects = [
     liveUrl: "",
   },
   {
-    id: 14,
+    id: 13,
     title: "Rock Paper Scissor Game",
     description: "Simple Game developed to play Rock paper scisors",
     image: rpsgame,
@@ -295,7 +278,7 @@ const projects = [
     liveUrl: "",
   },
   {
-    id: 15,
+    id: 14,
     title: "Chat Application",
     description: "Group chat application using Java SocketIO",
     image: wtzapp,
@@ -306,35 +289,6 @@ const projects = [
       { name: "Sockets", icon: FaJava, color: "#F7DF1E" },
     ],
     githubUrl: "https://github.com/DiilaNa/Chat-Appication-Using-SocketIO.git",
-    liveUrl: "",
-  },
-  {
-    id: 16,
-    title: "Learning R Language",
-    description:
-      "Self-studying the fundamentals of R language for data science focusing on data manipulation,visualization and basic analytical techniques. ",
-    image: r,
-    category: "Data Science & ML",
-    technologies: [{ name: "R Language", icon: SiR, color: "#269ec6ff" }],
-    githubUrl: "https://github.com/DiilaNa/Learning-R-Language.git",
-    liveUrl: "",
-  },
-  {
-    id: 17,
-    title: "Data Science with Pandas",
-    description:
-      "Self-studying data manupulation , processing , visualization and basics of machine learning modules.",
-    image: ds,
-    category: "Data Science & ML",
-    technologies: [
-      { name: "Python", icon: SiPython, color: "#3776AB" },
-      { name: "Jupytor", icon: SiJupyter, color: "#b94716ff" },
-      { name: "Scikit-learn", icon: SiScikitlearn, color: "#F7931E" },
-      { name: "Pandas", icon: SiPandas, color: "#461fe0ff" },
-      { name: "Matplotlib", icon: MdOutlineShowChart, color: "#11557C" },
-      { name: "Plotly Express", icon: SiPlotly, color: "#6076aaff" },
-    ],
-    githubUrl: "https://github.com/DiilaNa/Data_Science_with-Pandas.git",
     liveUrl: "",
   },
 ];
