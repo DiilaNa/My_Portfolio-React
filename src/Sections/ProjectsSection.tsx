@@ -34,11 +34,12 @@ import {
   SiPlotly,
   SiExpo,
   SiFirebase,
+  SiHibernate,
 } from "react-icons/si";
-//import { MdOutlineShowChart } from "react-icons/md";
 import { Github, ExternalLink } from "lucide-react";
 import { FaJava } from "react-icons/fa";
-import { SiHibernate } from "react-icons/si";
+import { Badge } from "../components/ui/Badge.tsx";
+
 import needitdone from "../assets/ProjectPics/Homepage.png";
 import bookme from "../assets/ProjectPics/Bookme.png";
 import mentalhealth from "../assets/ProjectPics/MentalHealthCenter.png";
@@ -50,12 +51,9 @@ import wtzapp from "../assets/ProjectPics/whatsapp.png";
 import complaintmngsytem from "../assets/ProjectPics/ComplaintMngSystem.png";
 import keepify from "../assets/ProjectPics/Keepify.png";
 import movieRecommeder from "../assets/ProjectPics/movieRecommenderApp.png";
-//import r from "../assets/ProjectPics/R_Language.png";
-//import ds from "../assets/ProjectPics/DS.png";
 import dsDashBoard from "../assets/ProjectPics/DS-dashboard.png";
-import { Badge } from "../components/ui/Badge.tsx";
 import SmartBlog from "../assets/ProjectPics/SmartBlog.png";
-import cashstash from "../assets/ProjectPics/Cash-Stash.png"
+import cashstash from "../assets/ProjectPics/Cash-Stash.png";
 
 const projects = [
   {
@@ -70,7 +68,6 @@ const projects = [
       { name: "Jupyter Notebook", icon: SiJupyter, color: "#F37626" },
       { name: "Pandas", icon: SiPandas, color: "#3c13e3ff" },
       { name: "Scikit-learn", icon: SiScikitlearn, color: "#F7931E" },
-
       { name: "NumPy", icon: SiNumpy, color: "#1db0e1ff" },
       { name: "Streamlit", icon: SiStreamlit, color: "#FF4B4B" },
     ],
@@ -120,15 +117,16 @@ const projects = [
   },
   {
     id: 4,
-    title: "Simple Blog Posting Platform",
+    title: "Smart-Blog - Simple Blogs Posting Platform",
     description:
-      "A platform to place blogs for users. This contains state management with context api",
+      "Self study project based on MERN Stack. This project focuses on clean UI/UX, and secure user interactions.",
     image: SmartBlog,
     category: "Web Development",
     technologies: [
-      { name: "React", icon: SiReact, color: "#3776AB" },
       { name: "MongoDB", icon: SiMongodb, color: "rgb(7, 201, 17)" },
+      { name: "React", icon: SiReact, color: "#3776AB" },
       { name: "Express js", icon: SiExpress, color: "#b9690d" },
+      { name: "NodeJS", icon: SiNodedotjs, color: "#47A248" },
       { name: "Typescript", icon: SiTypescript, color: "rgb(8, 171, 231)" },
       { name: "TailwindCSS", icon: SiTailwindcss, color: "#1693db" },
     ],
@@ -140,7 +138,7 @@ const projects = [
     id: 5,
     title: "Hospital diabetes patients readmision analysis",
     description:
-      "Healthcare data science group project analyzing diabetic patient readmissions using Python. The project applies data preprocessing, exploratory data analysis, and visualization techniques to identify risk factors with hospital readmissions.",
+      "Healthcare data science group project analyzing diabetic patient readmissions using Python. The project applies data preprocessing, exploratory data analysis, and visualization techniques.",
     image: dsDashBoard,
     category: "Data Science & ML",
     technologies: [
@@ -156,8 +154,9 @@ const projects = [
   },
   {
     id: 6,
-    title: "BOOKME - Ticket Booking System for University Events",
-    description: "BookMe streamlines campus event ticketing.",
+    title: "BOOKME - Ticket Booking System",
+    description:
+      "BookMe streamlines campus event ticketing for university students and organizers.",
     image: bookme,
     category: "Web Development",
     technologies: [
@@ -165,7 +164,6 @@ const projects = [
       { name: "React", icon: SiReact, color: "#61DAFB" },
       { name: "Spring Boot", icon: SiSpringboot, color: "#6DB33F" },
       { name: "MongoDB", icon: SiMongodb, color: "#47A248" },
-      { name: "NodeJS", icon: SiNodedotjs, color: "#47A248" },
       { name: "SASS", icon: SiSass, color: "#ed1ebe" },
     ],
     githubUrl: "https://github.com/DiilaNa/BookMe.git",
@@ -185,7 +183,6 @@ const projects = [
       { name: "JavaScript", icon: SiJavascript, color: "#F7DF1E" },
       { name: "Bootstrap", icon: SiBootstrap, color: "#7952B3" },
       { name: "jQuery", icon: SiJquery, color: "#0769AD" },
-
       { name: "MySQL", icon: SiMysql, color: "#4479A1" },
     ],
     githubUrl: "https://github.com/DiilaNa/BookMe.git",
@@ -329,11 +326,12 @@ const ProjectsSection = () => {
             <button
               key={category}
               className={`px-4 py-2 rounded-full border transition-colors ${
-                selectedCategory === category ? "bg-primary text-white border-primary"
+                selectedCategory === category
+                  ? "bg-primary text-white border-primary"
                   : "bg-card text-muted-foreground border-border hover:bg-primary/20"
               }`}
               onClick={() => {
-                  setSelectedCategory(category);
+                setSelectedCategory(category);
               }}
             >
               {category}
@@ -341,11 +339,13 @@ const ProjectsSection = () => {
           ))}
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 lg:gap-8">
+        {/* Added grid-rows-fr and items-stretch to ensure rows are equal height */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 lg:gap-8 items-stretch">
           {filteredProjects.map((project, index) => (
             <Card
               key={project.id}
-              className="group overflow-hidden bg-card/50 backdrop-blur-sm border-border/50 hover:border-primary/50 transition-all duration-300 hover:shadow-[0_0_20px_rgba(124,58,237,0.2)] animate-fade-in"
+              /* flex flex-col h-full ensures internal elements can expand to fill the card */
+              className="group flex flex-col h-full overflow-hidden bg-card/50 backdrop-blur-sm border-border/50 hover:border-primary/50 transition-all duration-300 hover:shadow-[0_0_20px_rgba(124,58,237,0.2)] animate-fade-in"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <div className="relative overflow-hidden">
@@ -366,7 +366,8 @@ const ProjectsSection = () => {
                 </CardDescription>
               </CardHeader>
 
-              <CardContent>
+              {/* flex-grow here pushes the Footer to the bottom */}
+              <CardContent className="flex-grow">
                 <div className="flex flex-wrap gap-2">
                   {project.technologies.map((tech) => {
                     const Icon = tech.icon;
@@ -387,7 +388,8 @@ const ProjectsSection = () => {
                 </div>
               </CardContent>
 
-              <CardFooter className="flex flex-wrap gap-2">
+              {/* Footer is now pinned at the bottom because Content is growing */}
+              <CardFooter className="flex flex-wrap gap-2 mt-auto">
                 <Button
                   variant="hero"
                   size="sm"
