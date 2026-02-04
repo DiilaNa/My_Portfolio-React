@@ -6,18 +6,21 @@ import {
 } from "../components/ui/Card";
 import { Button } from "../components/ui/Button";
 import { ExternalLink, Award, Calendar } from "lucide-react";
-import ciscoDataScience from "../assets/Introduction_to_Data_Science_certificate.pdf";
-import ijse from "../assets/IjseCertificate.jpg";
-import esoft from "../assets/esoftCertificate.jpg";
+import ciscoDataScience from "../assets/Certificates/Introduction_to_Data_Science_certificate.pdf";
+import aiml from "../assets/Certificates/AiML.pdf"
+import ijse from "../assets/Certificates/IjseCertificate.jpg";
+import esoft from "../assets/Certificates/esoftCertificate.jpg";
 import esoftAward from "../assets/esoftAward.jpeg";
 import ijseAward from "../assets/ijseAwardPic.jpg";
 import { Badge } from "../components/ui/Badge";
+import aimlPic from "../assets/AiMlpic.jpg"
 interface Certificate {
   id: number;
   title: string;
   issuer: string;
   issueDate?: string;
   certificateLink?: string;
+  certificateID?:string;
   image: string;
 }
 
@@ -46,6 +49,15 @@ const certificates: Certificate[] = [
     issueDate: "December 2024",
     certificateLink: esoft,
     image: esoftAward,
+  },
+  {
+    id: 4,
+    title: "Artificial Inteligence & Machine Learning",
+    issuer: "SKYREK AI & ML Academy",
+    issueDate: "February 2026",
+    certificateLink: aiml,
+    certificateID:"SKML26638",
+    image: aimlPic,
   },
 ];
 
